@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function EmployeesPage() { return <PlaceholderPage title="Employees" description="Employee records, profiles, search, and workforce management will be introduced in Phase 3." />; }

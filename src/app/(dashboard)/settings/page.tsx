@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function SettingsPage() { return <PlaceholderPage title="Settings" description="Workspace settings and configuration will be introduced in a later phase." />; }

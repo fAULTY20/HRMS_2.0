@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function HolidaysPage() { return <PlaceholderPage title="Holidays" description="Holiday calendars and management will be introduced in Phase 6." />; }

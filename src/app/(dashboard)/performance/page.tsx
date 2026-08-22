@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function PerformancePage() { return <PlaceholderPage title="Performance" description="Performance management is intentionally outside the current MVP foundation." />; }

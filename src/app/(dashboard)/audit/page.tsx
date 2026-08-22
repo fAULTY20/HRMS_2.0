@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function AuditPage() { return <PlaceholderPage title="Audit logs" description="Authorized audit history will be introduced in Phase 9." />; }

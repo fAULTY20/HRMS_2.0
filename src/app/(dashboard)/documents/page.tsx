@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function DocumentsPage() { return <PlaceholderPage title="Documents" description="Private employee document storage will be introduced in Phase 7." />; }

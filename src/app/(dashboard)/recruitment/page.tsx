@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function RecruitmentPage() { return <PlaceholderPage title="Recruitment" description="Recruitment workflows are intentionally outside the current MVP foundation." />; }

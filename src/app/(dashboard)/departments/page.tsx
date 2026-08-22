@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function DepartmentsPage() { return <PlaceholderPage title="Departments" description="Department structure and organization management will be introduced in Phase 3." />; }

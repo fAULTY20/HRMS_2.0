@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function ReportsPage() { return <PlaceholderPage title="Reports" description="Filterable employee, attendance, and leave reports will be introduced in Phase 9." />; }

@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function NotificationsPage() { return <PlaceholderPage title="Notifications" description="Role-aware notifications will be introduced in a later phase." />; }

@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function AssetsPage() { return <PlaceholderPage title="Assets" description="Asset inventory and assignment will be introduced in Phase 7." />; }

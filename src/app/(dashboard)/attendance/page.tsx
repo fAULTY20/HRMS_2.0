@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function AttendancePage() { return <PlaceholderPage title="Attendance" description="Attendance tracking and history will be introduced in Phase 4." />; }

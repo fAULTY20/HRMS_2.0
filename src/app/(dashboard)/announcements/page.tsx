@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function AnnouncementsPage() { return <PlaceholderPage title="Announcements" description="Company announcements and publishing will be introduced in Phase 6." />; }

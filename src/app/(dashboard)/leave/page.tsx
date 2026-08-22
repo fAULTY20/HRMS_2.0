@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function LeavePage() { return <PlaceholderPage title="Leave management" description="Leave requests, balances, and approvals will be introduced in Phase 5." />; }

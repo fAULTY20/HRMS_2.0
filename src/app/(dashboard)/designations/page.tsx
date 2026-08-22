@@ -1,0 +1,2 @@
+import { PlaceholderPage } from "@/components/layout/placeholder-page";
+export default function DesignationsPage() { return <PlaceholderPage title="Designations" description="Define role and title structures for your organization in a future phase." />; }
