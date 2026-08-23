@@ -4,7 +4,7 @@ import { canAccessPathForRole } from "@/lib/permissions";
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-export async function proxy(request: NextRequest) {
+export default async function handler(request: NextRequest) {
   let response = NextResponse.next({ request });
   const pathname = request.nextUrl.pathname;
   if (!isSupabaseConfigured()) {
