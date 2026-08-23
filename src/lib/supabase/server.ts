@@ -1,3 +1,4 @@
+import { isSupabaseConfigured } from "@/lib/auth/config";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
@@ -16,4 +17,11 @@ export async function createClient() {
       },
     },
   );
+}
+
+export async function getUser() {
+  if (!isSupabaseConfigured()) return { user: null, error: null };
+  const supabase = await createClient();
+  const { data: { user }, error } = await supabase.auth.getUser();
+  return { user, error };
 }

@@ -23,3 +23,11 @@ npm run build
 ```
 
 The current release contains only the application foundation and placeholder module routes. Authentication and HR modules are intentionally deferred to later phases.
+
+## Supabase setup
+
+1. Create a Supabase project and apply `supabase/migrations/202608230001_create_profiles.sql` in the SQL Editor.
+2. Create users in **Authentication > Users** with email confirmation as required by your project. Example development emails are `hr-admin@example.com`, `manager@example.com`, and `employee@example.com`; set their roles to `HR_ADMIN`, `MANAGER`, and `EMPLOYEE` in `public.profiles` after the trigger creates their profiles.
+3. Copy the project URL and anon key into `.env.local` using `.env.example`. Never add passwords, service-role keys, or `.env.local` to source control.
+
+Phase 3 adds `supabase/migrations/202608230002_create_people.sql`. Apply it after the profiles migration to create organizations, departments, designations, employees, indexes, foreign keys, and RLS policies. The People routes are `/people/employees`, `/people/departments`, `/people/designations`, and `/people/organizations`.

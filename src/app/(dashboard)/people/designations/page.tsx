@@ -1,0 +1,3 @@
+import { ResourceManager } from "@/features/people/components/resource-manager";
+import { listDesignations, listOrganizations } from "@/features/people/services";
+export default async function DesignationsPage() { const [{ data: rows = [], error }, { data: organizations = [] }] = await Promise.all([listDesignations(), listOrganizations()]); if (error) return <p className="text-sm text-[#a34836]">We could not load designations. Please try again.</p>; return <ResourceManager resource="designation" rows={rows} organizations={organizations} />; }

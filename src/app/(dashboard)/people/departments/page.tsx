@@ -1,0 +1,3 @@
+import { ResourceManager } from "@/features/people/components/resource-manager";
+import { listDepartments, listOrganizations } from "@/features/people/services";
+export default async function DepartmentsPage() { const [{ data: rows = [], error }, { data: organizations = [] }] = await Promise.all([listDepartments(), listOrganizations()]); if (error) return <p className="text-sm text-[#a34836]">We could not load departments. Please try again.</p>; return <ResourceManager resource="department" rows={rows} organizations={organizations} />; }

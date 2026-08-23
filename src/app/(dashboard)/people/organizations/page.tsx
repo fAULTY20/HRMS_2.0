@@ -1,0 +1,3 @@
+import { ResourceManager } from "@/features/people/components/resource-manager";
+import { listOrganizations } from "@/features/people/services";
+export default async function OrganizationsPage() { const { data = [], error } = await listOrganizations(); if (error) return <p className="text-sm text-[#a34836]">We could not load organizations. Please try again.</p>; return <ResourceManager resource="organization" rows={data} />; }
